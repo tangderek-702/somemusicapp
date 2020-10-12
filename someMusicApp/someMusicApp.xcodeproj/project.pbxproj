@@ -15,6 +15,7 @@
 		2D4AC66025351AAF00F1EEE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D4AC65E25351AAF00F1EEE9 /* LaunchScreen.storyboard */; };
 		2D4AC66B25351AAF00F1EEE9 /* someMusicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4AC66A25351AAF00F1EEE9 /* someMusicAppTests.swift */; };
 		2D4AC67625351AAF00F1EEE9 /* someMusicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4AC67525351AAF00F1EEE9 /* someMusicAppUITests.swift */; };
+		2D4AC68F25351DC300F1EEE9 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4AC68E25351DC300F1EEE9 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2D4AC67125351AAF00F1EEE9 /* someMusicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = someMusicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D4AC67525351AAF00F1EEE9 /* someMusicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = someMusicAppUITests.swift; sourceTree = "<group>"; };
 		2D4AC67725351AAF00F1EEE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D4AC68E25351DC300F1EEE9 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				2D4AC65525351AAD00F1EEE9 /* SceneDelegate.swift */,
 				2D4AC65725351AAD00F1EEE9 /* ViewController.swift */,
 				2D4AC65925351AAD00F1EEE9 /* Main.storyboard */,
+				2D4AC68E25351DC300F1EEE9 /* ViewController2.swift */,
 				2D4AC65C25351AAF00F1EEE9 /* Assets.xcassets */,
 				2D4AC65E25351AAF00F1EEE9 /* LaunchScreen.storyboard */,
 				2D4AC66125351AAF00F1EEE9 /* Info.plist */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D4AC65825351AAD00F1EEE9 /* ViewController.swift in Sources */,
+				2D4AC68F25351DC300F1EEE9 /* ViewController2.swift in Sources */,
 				2D4AC65425351AAD00F1EEE9 /* AppDelegate.swift in Sources */,
 				2D4AC65625351AAD00F1EEE9 /* SceneDelegate.swift in Sources */,
 			);
