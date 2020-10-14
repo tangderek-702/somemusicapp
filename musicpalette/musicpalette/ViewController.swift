@@ -18,19 +18,23 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var yayButton: UIButton!
     @IBOutlet weak var nayButton: UIButton!
+    @IBOutlet weak var artistsSoFar: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-    
     
     @IBAction func yayButtonClicked(_ sender: Any) {
+        artistsSoFar.text = "";
         if counter == artists.count {
             counter = 0
         }
+        yay.append(artistLabel.text!)
         artistLabel.text = artists[counter]
         counter = counter + 1
+        for name in yay {
+            artistsSoFar.text?.append(name)
+        }
     }
     @IBAction func nayButtonClicked(_ sender: Any) {
         if counter == artists.count {
