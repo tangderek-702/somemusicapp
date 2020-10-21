@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         "Rich Brian": ["Love in my Pocket", "100 Degrees", "Midsummer Madness", "Yellow", "Sometimes", "When You Come Home"],
         "Drake": ["Hotline Bling", "Headlines", "Toosie Slide", "God's Plan", "One Dance", "In My Feelings"],
         "Niki": ["Indigo", "Nightcrawlers", "lowkey", "I Like U", "See U Never", "La La Lost You"]]
+    let images = ["Joji": "joji.jpg", "Rich Brian": "richbrian.jpg","Drake" : "drake.jpg","Niki": "niki.jpg"]
 //    let songs = ["Joji": "Daylight",
 //    "Rich Brian": "100 Degrees",
 //    "Drake": "Hotline Bling",
@@ -29,6 +30,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var nayButton: UIButton!
     @IBOutlet weak var artistsSoFar: UILabel!
     @IBOutlet weak var songsSoFar: UILabel!
+    @IBOutlet weak var artistImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,13 +54,16 @@ class ViewController: UIViewController {
         }
         playlist.append(addSong ?? "song")
         
-        artistLabel.text = artists[counter]
+        var artistName = artists[counter]
+        artistLabel.text = artistName
+        artistImage.image = UIImage(named: images[artistName] ?? "image" )
         counter = counter + 1
+        
         for name in yay {
-            artistsSoFar.text?.append(name)
+            artistsSoFar.text?.append(name + " ")
         }
         for name in playlist {
-            songsSoFar.text?.append(name)
+            songsSoFar.text?.append(name + " ")
         }
     }
     @IBAction func nayButtonClicked(_ sender: Any) {
