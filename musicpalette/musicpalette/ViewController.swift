@@ -70,7 +70,10 @@ class ViewController: UIViewController {
         if counter == artists.count {
             counter = 0
         }
-        artistLabel.text = artists[counter]
+        var artistName = artists[counter]
+        artistLabel.text = artistName
+        artistImage.image = UIImage(named: images[artistName] ?? "image" )
+
         counter = counter + 1
     }
     
