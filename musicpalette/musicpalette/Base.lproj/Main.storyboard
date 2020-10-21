@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,69 +17,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwl-as-HJ9">
-                                <rect key="frame" x="124" y="770" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="Jp5-k6-n2G"/>
-                                    <constraint firstAttribute="height" constant="30" id="RAq-CR-V32"/>
-                                </constraints>
-                                <state key="normal" title="nay"/>
-                                <connections>
-                                    <action selector="nayButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YiO-28-yRw"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Artists so far: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGk-3j-klG">
                                 <rect key="frame" x="133" y="174" width="148" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="148" id="Cd7-4t-d01"/>
                                     <constraint firstAttribute="height" constant="30" id="XcY-xZ-Fpp"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRq-aM-Zim">
-                                <rect key="frame" x="41.5" y="208" width="331" height="61"/>
+                                <rect key="frame" x="41.5" y="232" width="358" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="tIQ-vi-sOd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRM-YK-k84">
-                                <rect key="frame" x="264" y="770" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRM-YK-k84">
+                                <rect key="frame" x="284" y="756" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="iBX-Rt-8bG"/>
-                                    <constraint firstAttribute="height" constant="30" id="zSa-Gw-g84"/>
+                                    <constraint firstAttribute="width" constant="50" id="NCl-7F-j2u"/>
+                                    <constraint firstAttribute="height" constant="50" id="sjt-iR-42Z"/>
                                 </constraints>
-                                <state key="normal" title="yay"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="checkmark.circle.fill" catalog="system" symbolScale="large"/>
+                                </state>
                                 <connections>
                                     <action selector="yayButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KIm-Bs-Eqa"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9u9-j8-s7Y">
-                                <rect key="frame" x="77" y="292" width="260" height="270"/>
+                                <rect key="frame" x="77" y="316" width="287" height="226"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEB-AD-l7d">
-                                <rect key="frame" x="41.5" y="601" width="331" height="128"/>
+                                <rect key="frame" x="41.5" y="581" width="358" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="YhF-Iy-cNb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLz-zX-GRX">
-                                <rect key="frame" x="150" y="101" width="114" height="21"/>
+                                <rect key="frame" x="146.5" y="101" width="148" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="gFG-7v-MN7"/>
-                                    <constraint firstAttribute="width" constant="114" id="nk5-zs-Dxq"/>
+                                    <constraint firstAttribute="width" constant="148" id="ZLN-fv-g9W"/>
+                                    <constraint firstAttribute="height" constant="45" id="hIK-Ch-NmT"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwl-as-HJ9">
+                                <rect key="frame" x="97" y="764" width="35" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="8R6-At-D96"/>
+                                    <constraint firstAttribute="height" constant="50" id="Cw7-b1-GrW"/>
+                                </constraints>
+                                <state key="normal">
+                                    <imageReference key="image" image="xmark.circle.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="nayButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YiO-28-yRw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.99271367443254055" green="0.80472967207863089" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -94,10 +100,10 @@
                             <constraint firstItem="NRM-YK-k84" firstAttribute="top" secondItem="HEB-AD-l7d" secondAttribute="bottom" constant="41" id="IfW-jC-Xxs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NRM-YK-k84" secondAttribute="bottom" constant="62" id="KP9-4c-zD8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gwl-as-HJ9" secondAttribute="bottom" constant="62" id="LP1-Np-mce"/>
+                            <constraint firstItem="NRM-YK-k84" firstAttribute="leading" secondItem="gwl-as-HJ9" secondAttribute="trailing" constant="122" id="LhH-pX-jda"/>
                             <constraint firstItem="HEB-AD-l7d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41.5" id="Lsa-Vk-u4y"/>
                             <constraint firstItem="HEB-AD-l7d" firstAttribute="top" secondItem="9u9-j8-s7Y" secondAttribute="bottom" constant="39" id="Lsg-BP-9cI"/>
                             <constraint firstItem="HEB-AD-l7d" firstAttribute="top" secondItem="9u9-j8-s7Y" secondAttribute="bottom" constant="39" id="OeL-0p-JlJ"/>
-                            <constraint firstItem="NRM-YK-k84" firstAttribute="leading" secondItem="gwl-as-HJ9" secondAttribute="trailing" constant="110" id="Qhl-Nt-y3y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HEB-AD-l7d" secondAttribute="trailing" constant="41.5" id="Sg5-yh-82V"/>
                             <constraint firstItem="KGk-3j-klG" firstAttribute="top" secondItem="yLz-zX-GRX" secondAttribute="bottom" constant="38" id="W0G-TL-fZD"/>
                             <constraint firstItem="RRq-aM-Zim" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41.5" id="XNy-I1-hbo"/>
@@ -124,4 +130,8 @@
             <point key="canvasLocation" x="982.60869565217399" y="114.50892857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
 </document>
