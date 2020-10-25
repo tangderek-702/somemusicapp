@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let dataSource = ArtistDataSource()
+    
     let artists = ["Joji", "Rich Brian", "Drake", "Niki"]
     let songs = ["Joji": ["Slow Dancing in the Dark", "Daylight", "Tick Tock", "Ew", "Run"],
         "Rich Brian": ["Love in my Pocket", "100 Degrees", "Midsummer Madness", "Yellow", "Sometimes", "When You Come Home"],
@@ -42,7 +44,7 @@ class ViewController: UIViewController {
         artistsSoFar.text = "";
         songsSoFar.text = "";
         
-        if counter == artists.count {
+        if counter == dataSource.artists.count {
             counter = 0
         }
         yay.append(artistLabel.text!)
