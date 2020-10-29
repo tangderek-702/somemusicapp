@@ -42,23 +42,33 @@ class ViewController: UIViewController {
     @IBAction func yayButtonClicked(_ sender: Any) {
         artistsSoFar.text = "";
         songsSoFar.text = "";
+        var currArtist = dataSource.artists[0]
+        for artist in dataSource.artists {
+            if artist.name == artistLabel.text {
+                currArtist = artist
+            }
+        }
         
         if counter == dataSource.artists.count {
             counter = 0
         }
         yay.append(artistLabel.text!)
         
-        var artistSongs = songs[artistLabel.text ?? "song"]
+        //var artistSongs = songs[artistLabel.text ?? "song"]
+        var artistSongs = currArtist.songs
         
-        var addSong = (artistSongs?.randomElement()!)
-        while playlist.contains(addSong ?? "song") {
-            addSong = (artistSongs?.randomElement()!)
+        var addSong = (artistSongs.randomElement()!)
+        while playlist.contains(addSong) {
+            addSong = (artistSongs.randomElement()!)
         }
-        playlist.append(addSong ?? "song")
+        playlist.append(addSong)
         
-        var artistName = artists[counter]
-        artistLabel.text = artistName
-        artistImage.image = UIImage(named: images[artistName] ?? "image" )
+        //var artistName = artists[counter]
+        //artistLabel.text = artistName
+        //artistImage.image = UIImage(named: images[artistName] ?? "image" )
+        var nextArtist = dataSource.artists[counter]
+        artistLabel.text = nextArtist.name
+        artistImage.image =  nextArtist.image
         counter = counter + 1
         
         for name in yay {
@@ -76,11 +86,11 @@ class ViewController: UIViewController {
         if counter == artists.count {
             counter = 0
         }
-        var artistName = artists[counter]
-        artistLabel.text = artistName
-        artistImage.image = UIImage(named: images[artistName] ?? "image" )
-
+        var nextArtist = dataSource.artists[counter]
+        artistLabel.text = nextArtist.name
+        artistImage.image =  nextArtist.image
         counter = counter + 1
+        
         numArtist += 1
         //number of artists until playlist is made can be changed
         if numArtist > 8 {
