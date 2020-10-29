@@ -18,11 +18,9 @@ class ViewController: UIViewController {
         "Drake": ["Hotline Bling", "Headlines", "Toosie Slide", "God's Plan", "One Dance", "In My Feelings"],
         "Niki": ["Indigo", "Nightcrawlers", "lowkey", "I Like U", "See U Never", "La La Lost You"]]
     let images = ["Joji": "joji.jpg", "Rich Brian": "richbrian.jpg","Drake" : "drake.jpg","Niki": "niki.jpg"]
-//    let songs = ["Joji": "Daylight",
-//    "Rich Brian": "100 Degrees",
-//    "Drake": "Hotline Bling",
-//    "Niki": "Indigo"]
+
     var counter = 0
+    var numArtist = 0
     var yay: [String] = []
     var playlist: [String] = []
 
@@ -33,6 +31,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var artistsSoFar: UILabel!
     @IBOutlet weak var songsSoFar: UILabel!
     @IBOutlet weak var artistImage: UIImageView!
+    @IBOutlet weak var makePlaylistButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +67,10 @@ class ViewController: UIViewController {
         for name in playlist {
             songsSoFar.text?.append(name + " ")
         }
+        numArtist += 1
+        if numArtist > 8 {
+            makePlaylistButton.isHidden = false
+        }
     }
     @IBAction func nayButtonClicked(_ sender: Any) {
         if counter == artists.count {
@@ -78,6 +81,17 @@ class ViewController: UIViewController {
         artistImage.image = UIImage(named: images[artistName] ?? "image" )
 
         counter = counter + 1
+        numArtist += 1
+        //number of artists until playlist is made can be changed
+        if numArtist > 8 {
+            makePlaylistButton.isHidden = false
+        }
+    }
+    @IBAction func makePlaylist(_ sender: Any) {
+        self.performSegue(withIdentifier: "playlistView", sender: self)
+        
+        
+        
     }
     
 }
