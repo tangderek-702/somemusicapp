@@ -11,13 +11,6 @@ import UIKit
 class ViewController: UIViewController {
     
     let dataSource = ArtistDataSource()
-    
-    let artists = ["Joji", "Rich Brian", "Drake", "Niki"]
-    let songs = ["Joji": ["Slow Dancing in the Dark", "Daylight", "Tick Tock", "Ew", "Run"],
-        "Rich Brian": ["Love in my Pocket", "100 Degrees", "Midsummer Madness", "Yellow", "Sometimes", "When You Come Home"],
-        "Drake": ["Hotline Bling", "Headlines", "Toosie Slide", "God's Plan", "One Dance", "In My Feelings"],
-        "Niki": ["Indigo", "Nightcrawlers", "lowkey", "I Like U", "See U Never", "La La Lost You"]]
-    let images = ["Joji": "joji.jpg", "Rich Brian": "richbrian.jpg","Drake" : "drake.jpg","Niki": "niki.jpg"]
 
     var counter = 0
     var numArtist = 0
@@ -54,7 +47,7 @@ class ViewController: UIViewController {
         }
         yay.append(artistLabel.text!)
         
-        //var artistSongs = songs[artistLabel.text ?? "song"]
+    
         var artistSongs = currArtist.songs
         
         var addSong = (artistSongs.randomElement()!)
@@ -63,9 +56,7 @@ class ViewController: UIViewController {
         }
         playlist.append(addSong)
         
-        //var artistName = artists[counter]
-        //artistLabel.text = artistName
-        //artistImage.image = UIImage(named: images[artistName] ?? "image" )
+    
         var nextArtist = dataSource.artists[counter]
         artistLabel.text = nextArtist.name
         artistImage.image =  nextArtist.image
@@ -83,7 +74,7 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func nayButtonClicked(_ sender: Any) {
-        if counter == artists.count {
+        if counter == dataSource.artists.count {
             counter = 0
         }
         var nextArtist = dataSource.artists[counter]
