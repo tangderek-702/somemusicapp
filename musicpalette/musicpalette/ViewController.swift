@@ -71,6 +71,8 @@ class ViewController: UIViewController {
         numArtist += 1
         if numArtist > 8 {
             makePlaylistButton.isHidden = false
+            yayButton.isHidden = true
+            nayButton.isHidden = true
         }
     }
     @IBAction func nayButtonClicked(_ sender: Any) {
@@ -86,13 +88,18 @@ class ViewController: UIViewController {
         //number of artists until playlist is made can be changed
         if numArtist > 8 {
             makePlaylistButton.isHidden = false
+            yayButton.isHidden = true
+            nayButton.isHidden = true
+            
         }
     }
     @IBAction func makePlaylist(_ sender: Any) {
         self.performSegue(withIdentifier: "playlistView", sender: self)
-        
-        
-        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any? ) {
+        let vc: PlaylistViewController = segue.destination as! PlaylistViewController
+        vc.playlist = playlist.joined(separator: ", ")
     }
     
 }

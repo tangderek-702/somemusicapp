@@ -9,9 +9,13 @@
 import UIKit
 
 class PlaylistViewController: UIViewController {
+    
+    var playlist : String = ""
 
+    @IBOutlet weak var playlistLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        playlistLabel.text = playlist
 
         // Do any additional setup after loading the view.
     }
