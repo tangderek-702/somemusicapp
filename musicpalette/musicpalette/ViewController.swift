@@ -45,8 +45,10 @@ class ViewController: UIViewController {
         if counter == dataSource.artists.count {
             counter = 0
         }
-        yay.append(artistLabel.text!)
-        
+        //yay.append(artistLabel.text!)
+        if artistLabel.text != "Artists:" {
+            yay.append(artistLabel.text!)
+        }
     
         var artistSongs = currArtist.songs
         
@@ -54,9 +56,11 @@ class ViewController: UIViewController {
         while playlist.contains(addSong) {
             addSong = (artistSongs.randomElement()!)
         }
-        playlist.append(addSong)
+        //fix so it doesn't print when there is no image
+        if artistLabel.text != "Artists:" {
+            playlist.append(addSong)
+        }
         
-    
         var nextArtist = dataSource.artists[counter]
         artistLabel.text = nextArtist.name
         artistImage.image =  nextArtist.image
@@ -83,14 +87,7 @@ class ViewController: UIViewController {
         artistImage.image =  nextArtist.image
         counter = counter + 1
         
-        numArtist += 1
-        //number of artists until playlist is made can be changed
-        if numArtist > 8 {
-            makePlaylistButton.isHidden = false
-            yayButton.isHidden = true
-            nayButton.isHidden = true
-            
-        }
+        
     }
     @IBAction func makePlaylist(_ sender: Any) {
         self.performSegue(withIdentifier: "playlistView", sender: self)
