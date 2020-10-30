@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		160AC984254B7E86006E0B2E /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160AC983254B7E86006E0B2E /* PlaylistViewController.swift */; };
+		16348F5A254BAC1F007B80D2 /* SwipeSelectorViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16348F53254BAC1E007B80D2 /* SwipeSelectorViewControllerDataSource.swift */; };
+		16348F5B254BAC1F007B80D2 /* SwipeSelectorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16348F54254BAC1E007B80D2 /* SwipeSelectorDelegate.swift */; };
+		16348F5C254BAC1F007B80D2 /* SwipeSelectorCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16348F55254BAC1E007B80D2 /* SwipeSelectorCardView.swift */; };
+		16348F5D254BAC1F007B80D2 /* SwipeSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16348F56254BAC1E007B80D2 /* SwipeSelectorViewController.swift */; };
+		16348F5E254BAC1F007B80D2 /* SwipeSelectorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16348F57254BAC1E007B80D2 /* SwipeSelectorModel.swift */; };
+		16348F5F254BAC1F007B80D2 /* SwipeSelectorTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16348F58254BAC1E007B80D2 /* SwipeSelectorTextView.swift */; };
+		16348F60254BAC1F007B80D2 /* SwipeSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16348F59254BAC1E007B80D2 /* SwipeSelectorView.swift */; };
+		16348F65254BAC48007B80D2 /* SwipeSelector.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16348F64254BAC48007B80D2 /* SwipeSelector.storyboard */; };
 		16816E6D2546060C003C614E /* ArtistDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16816E6C2546060C003C614E /* ArtistDataSource.swift */; };
 		16816E7225460613003C614E /* ArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16816E7125460613003C614E /* ArtistModel.swift */; };
 		CEB8D0FA25368DFE004ED8B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8D0F925368DFE004ED8B8 /* AppDelegate.swift */; };
@@ -37,6 +45,14 @@
 
 /* Begin PBXFileReference section */
 		160AC983254B7E86006E0B2E /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		16348F53254BAC1E007B80D2 /* SwipeSelectorViewControllerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeSelectorViewControllerDataSource.swift; sourceTree = "<group>"; };
+		16348F54254BAC1E007B80D2 /* SwipeSelectorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeSelectorDelegate.swift; sourceTree = "<group>"; };
+		16348F55254BAC1E007B80D2 /* SwipeSelectorCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeSelectorCardView.swift; sourceTree = "<group>"; };
+		16348F56254BAC1E007B80D2 /* SwipeSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeSelectorViewController.swift; sourceTree = "<group>"; };
+		16348F57254BAC1E007B80D2 /* SwipeSelectorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeSelectorModel.swift; sourceTree = "<group>"; };
+		16348F58254BAC1E007B80D2 /* SwipeSelectorTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeSelectorTextView.swift; sourceTree = "<group>"; };
+		16348F59254BAC1E007B80D2 /* SwipeSelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeSelectorView.swift; sourceTree = "<group>"; };
+		16348F64254BAC48007B80D2 /* SwipeSelector.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SwipeSelector.storyboard; sourceTree = "<group>"; };
 		16816E6C2546060C003C614E /* ArtistDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistDataSource.swift; sourceTree = "<group>"; };
 		16816E7125460613003C614E /* ArtistModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistModel.swift; sourceTree = "<group>"; };
 		CEB8D0F625368DFE004ED8B8 /* musicpalette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = musicpalette.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,12 +113,20 @@
 		CEB8D0F825368DFE004ED8B8 /* musicpalette */ = {
 			isa = PBXGroup;
 			children = (
+				16348F55254BAC1E007B80D2 /* SwipeSelectorCardView.swift */,
+				16348F54254BAC1E007B80D2 /* SwipeSelectorDelegate.swift */,
+				16348F57254BAC1E007B80D2 /* SwipeSelectorModel.swift */,
+				16348F58254BAC1E007B80D2 /* SwipeSelectorTextView.swift */,
+				16348F59254BAC1E007B80D2 /* SwipeSelectorView.swift */,
+				16348F56254BAC1E007B80D2 /* SwipeSelectorViewController.swift */,
+				16348F53254BAC1E007B80D2 /* SwipeSelectorViewControllerDataSource.swift */,
 				CEB8D0F925368DFE004ED8B8 /* AppDelegate.swift */,
 				16816E7125460613003C614E /* ArtistModel.swift */,
 				16816E6C2546060C003C614E /* ArtistDataSource.swift */,
 				CEB8D0FB25368DFE004ED8B8 /* SceneDelegate.swift */,
 				CEB8D0FD25368DFE004ED8B8 /* ViewController.swift */,
 				CEB8D0FF25368DFE004ED8B8 /* Main.storyboard */,
+				16348F64254BAC48007B80D2 /* SwipeSelector.storyboard */,
 				160AC983254B7E86006E0B2E /* PlaylistViewController.swift */,
 				CEB8D10225368E06004ED8B8 /* Assets.xcassets */,
 				CEB8D10425368E06004ED8B8 /* LaunchScreen.storyboard */,
@@ -215,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16348F65254BAC48007B80D2 /* SwipeSelector.storyboard in Resources */,
 				CEB8D10625368E06004ED8B8 /* LaunchScreen.storyboard in Resources */,
 				CEB8D10325368E06004ED8B8 /* Assets.xcassets in Resources */,
 				CEB8D10125368DFE004ED8B8 /* Main.storyboard in Resources */,
@@ -242,12 +267,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16348F5D254BAC1F007B80D2 /* SwipeSelectorViewController.swift in Sources */,
 				CEB8D0FE25368DFE004ED8B8 /* ViewController.swift in Sources */,
 				CEB8D0FA25368DFE004ED8B8 /* AppDelegate.swift in Sources */,
+				16348F5C254BAC1F007B80D2 /* SwipeSelectorCardView.swift in Sources */,
+				16348F5E254BAC1F007B80D2 /* SwipeSelectorModel.swift in Sources */,
+				16348F5B254BAC1F007B80D2 /* SwipeSelectorDelegate.swift in Sources */,
 				160AC984254B7E86006E0B2E /* PlaylistViewController.swift in Sources */,
+				16348F5F254BAC1F007B80D2 /* SwipeSelectorTextView.swift in Sources */,
 				16816E7225460613003C614E /* ArtistModel.swift in Sources */,
 				CEB8D0FC25368DFE004ED8B8 /* SceneDelegate.swift in Sources */,
 				16816E6D2546060C003C614E /* ArtistDataSource.swift in Sources */,
+				16348F60254BAC1F007B80D2 /* SwipeSelectorView.swift in Sources */,
+				16348F5A254BAC1F007B80D2 /* SwipeSelectorViewControllerDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
