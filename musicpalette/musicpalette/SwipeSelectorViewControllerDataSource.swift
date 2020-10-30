@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 public struct SwipeSelectorViewControllerDataSource {
-    
+    //our datasource
     public let items: [SwipeSelectorModel] = [
         SwipeSelectorModel(title: "Drake", subtitle: "God's Plan", image: UIImage(named: "drake")),
         SwipeSelectorModel(title: "Rich Brian", subtitle: "Love in my Pocket", image: UIImage(named: "richbrian")),
