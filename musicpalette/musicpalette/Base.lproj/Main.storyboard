@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="musicpalette" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Artists so far: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGk-3j-klG">
@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRq-aM-Zim">
-                                <rect key="frame" x="41.5" y="232" width="331" height="61"/>
+                                <rect key="frame" x="41.5" y="188" width="358" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="tIQ-vi-sOd"/>
                                 </constraints>
@@ -36,7 +36,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRM-YK-k84">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRM-YK-k84">
                                 <rect key="frame" x="284" y="756" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="NCl-7F-j2u"/>
@@ -51,10 +51,10 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9u9-j8-s7Y">
-                                <rect key="frame" x="77" y="316" width="260" height="226"/>
+                                <rect key="frame" x="77" y="272" width="287" height="216"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEB-AD-l7d">
-                                <rect key="frame" x="41.5" y="581" width="331" height="128"/>
+                                <rect key="frame" x="41.5" y="527" width="358" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="YhF-Iy-cNb"/>
                                 </constraints>
@@ -63,7 +63,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artists:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLz-zX-GRX">
-                                <rect key="frame" x="133" y="101" width="148" height="45"/>
+                                <rect key="frame" x="146.5" y="57" width="148" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="148" id="ZLN-fv-g9W"/>
                                     <constraint firstAttribute="height" constant="45" id="hIK-Ch-NmT"/>
@@ -72,7 +72,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwl-as-HJ9">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwl-as-HJ9">
                                 <rect key="frame" x="97" y="764" width="35" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="8R6-At-D96"/>
@@ -86,7 +86,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abk-Zz-uOl">
-                                <rect key="frame" x="142" y="802" width="130" height="60"/>
+                                <rect key="frame" x="142" y="681" width="130" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Make Playlist"/>
@@ -125,6 +125,7 @@
                             <constraint firstItem="9u9-j8-s7Y" firstAttribute="top" secondItem="RRq-aM-Zim" secondAttribute="bottom" constant="23" id="qqe-ze-6Kn"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="uk1-5B-UBD"/>
                     <connections>
                         <outlet property="artistImage" destination="9u9-j8-s7Y" id="9c8-kf-z5g"/>
                         <outlet property="artistLabel" destination="yLz-zX-GRX" id="0FA-7d-qmu"/>
@@ -162,6 +163,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJp-yC-feM">
+                                <rect key="frame" x="121" y="710" width="182" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Make Another Playlist"/>
+                                <connections>
+                                    <action selector="makeAnotherButton:" destination="AA3-3O-tRo" eventType="touchUpInside" id="vhD-Hs-eq9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z52-95-lxy"/>
                         <color key="backgroundColor" red="1" green="0.91404446289999997" blue="0.97768360509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -169,6 +179,7 @@
                     <navigationItem key="navigationItem" id="q5a-Am-O1m"/>
                     <connections>
                         <outlet property="playlistLabel" destination="aFy-kC-LZY" id="38T-zT-rfM"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="makeAnotherView" id="ozO-vi-pur"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Jw-n6-uuM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -19,6 +19,9 @@ class PlaylistViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func makeAnotherButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "makeAnotherView", sender: self)
+    }
     
 
     /*
