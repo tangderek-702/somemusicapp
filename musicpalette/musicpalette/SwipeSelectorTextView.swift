@@ -8,8 +8,8 @@
 import Foundation
 import UIKit
 
-let titleFont = UIFont(name: "MarkerFelt-Wide", size: UIFont.systemFontSize * 2)!
-let subtitleFont = UIFont(name: "MarkerFelt-Thin", size: UIFont.systemFontSize * 2)!
+let titleFont = UIFont(name: "HiraginoSans-W3", size: UIFont.systemFontSize * 2)!
+let subtitleFont = UIFont(name: "HiraginoSans-W6", size: UIFont.systemFontSize * 2)!
 
 class BaseTextView: UITextView {
     
