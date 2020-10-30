@@ -62,12 +62,11 @@ class ViewController: UIViewController {
         artistImage.image =  nextArtist.image
         counter = counter + 1
         
-        for name in yay {
-            artistsSoFar.text?.append(name + " ")
-        }
-        for name in playlist {
-            songsSoFar.text?.append(name + " ")
-        }
+
+        artistsSoFar.text = yay.joined(separator: ", ")
+        
+        songsSoFar.text = playlist.joined(separator: ", ")
+    
         numArtist += 1
         if numArtist > 8 {
             makePlaylistButton.isHidden = false
