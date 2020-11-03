@@ -47,6 +47,6 @@ class SwipeSelectorCardView: UIView {
     public func configureViewModel(_ model: SwipeSelectorModel) {
         imageView.image = model.image
         titleTextView.text = model.title
-        subtitleTextView.text = model.subtitle
+        subtitleTextView.text = model.subtitle[0]
     }
 }
