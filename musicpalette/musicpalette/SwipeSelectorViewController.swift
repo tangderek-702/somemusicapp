@@ -51,5 +51,18 @@ class SwipeSelectorViewController: UIViewController, SwipeSelectorDelegate {
     func swipeSelectorViewItemForOverflow(_ swipeSelectorView: SwipeSelectorView) -> SwipeSelectorModel {
         return dataSource.overflowItem
     }
+    
+    func swipeSelectorViewDidTap(_ swipeSelectorView: SwipeSelectorView, itemAtIndex: Int) {
+        if (itemAtIndex < dataSource.items.count) {
+            // TODO: Add Detail View Controller per item
+            return
+        } else {
+            // TODO: Add Playlist View Controller at the overflow item
+            let playlistViewController = UIViewController()
+            playlistViewController.view.backgroundColor = UIColor.green
+            self.present(playlistViewController, animated: true, completion: nil)
+        }
+    }
+
 }
 
