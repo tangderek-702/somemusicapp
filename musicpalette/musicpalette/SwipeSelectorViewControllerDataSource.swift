@@ -18,6 +18,6 @@ public struct SwipeSelectorViewControllerDataSource {
         
     ]
     
-    public let overflowItem: SwipeSelectorModel = SwipeSelectorModel(title: "Thanks ✌️", subtitle: ["Enjoy the playlist"], image: UIImage(named: "playlist"))
+    public let overflowItem: SwipeSelectorModel = SwipeSelectorModel(title: "Enjoy the Playlist ✌️", subtitle: ["Enjoy the playlist"], image: UIImage(named: "playlist"))
     
 }
