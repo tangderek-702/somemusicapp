@@ -58,9 +58,10 @@ class SwipeSelectorViewController: UIViewController, SwipeSelectorDelegate {
             return
         } else {
             // TODO: Add Playlist View Controller at the overflow item
-            let playlistViewController = UIViewController()
-            playlistViewController.view.backgroundColor = UIColor.green
-            self.present(playlistViewController, animated: true, completion: nil)
+            let pc:PlaylistTableViewController = PlaylistTableViewController(swipeModels: rightSwipes)
+            pc.view.backgroundColor = UIColor.green
+            PlaylistTableViewController.
+            self.present(PlaylistTableViewController, animated: true, completion: nil)
         }
     }
 
