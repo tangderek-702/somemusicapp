@@ -25,6 +25,8 @@
 		CEB8D10125368DFE004ED8B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB8D0FF25368DFE004ED8B8 /* Main.storyboard */; };
 		CEB8D10325368E06004ED8B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB8D10225368E06004ED8B8 /* Assets.xcassets */; };
 		CEB8D10625368E06004ED8B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB8D10425368E06004ED8B8 /* LaunchScreen.storyboard */; };
+		CEE02BA22554DD9D0073E621 /* PlaylistTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE02BA12554DD9D0073E621 /* PlaylistTableViewController.storyboard */; };
+		CEE02BA72554DE660073E621 /* PlaylistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE02BA62554DE660073E621 /* PlaylistTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		CEB8D10725368E06004ED8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEB8D10C25368E07004ED8B8 /* musicpaletteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = musicpaletteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB8D11725368E07004ED8B8 /* musicpaletteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = musicpaletteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE02BA12554DD9D0073E621 /* PlaylistTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlaylistTableViewController.storyboard; sourceTree = "<group>"; };
+		CEE02BA62554DE660073E621 /* PlaylistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,8 @@
 				CEB8D10425368E06004ED8B8 /* LaunchScreen.storyboard */,
 				CEB8D10725368E06004ED8B8 /* Info.plist */,
 				22BE6D1A25537FEF00DD7E4B /* PlaylistTableViewController.swift */,
+				CEE02BA12554DD9D0073E621 /* PlaylistTableViewController.storyboard */,
+				CEE02BA62554DE660073E621 /* PlaylistTableViewCell.xib */,
 			);
 			path = musicpalette;
 			sourceTree = "<group>";
@@ -246,6 +252,8 @@
 				CEB8D10625368E06004ED8B8 /* LaunchScreen.storyboard in Resources */,
 				CEB8D10325368E06004ED8B8 /* Assets.xcassets in Resources */,
 				CEB8D10125368DFE004ED8B8 /* Main.storyboard in Resources */,
+				CEE02BA22554DD9D0073E621 /* PlaylistTableViewController.storyboard in Resources */,
+				CEE02BA72554DE660073E621 /* PlaylistTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,17 @@
 
 import UIKit
 
+class PlaylistTableViewCell:UITableViewCell {
+    @IBOutlet weak var artistImageView: UIImageView!
+    @IBOutlet weak var artistNameLabel: UILabel!
+    @IBOutlet weak var artistSongsLabel: UILabel!
+}
+
+
 class PlaylistTableViewController: UITableViewController {
     var swipeModels: [SwipeSelectorModel] = []
+    
+    @IBOutlet weak var playlistTableViewOutlet: UITableView! //TODO: check again
     
     init(swipeModels: [SwipeSelectorModel]) {
         self.swipeModels = swipeModels
@@ -34,7 +43,7 @@ class PlaylistTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -48,9 +57,7 @@ class PlaylistTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }
-    
-    
-   
+
     /*
      // MARK: - Navigation
      
