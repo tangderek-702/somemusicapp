@@ -27,7 +27,7 @@ class PlaylistTableViewController: UITableViewController {
     //MARK: UITableViewDataSource
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return swipeModels.count //TODO: check again
     }
 
     // Provide a cell object for each row.
@@ -36,9 +36,16 @@ class PlaylistTableViewController: UITableViewController {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "Playlist Table View Cell", for: indexPath) as! PlaylistTableViewCell
         
-        cell.ArtistImage.image = swipeModels[0].image
-        cell.ArtistName.text = swipeModels[0].title
-//        cell.ArtistSongs.text = swipeModels[0].subtitle
+        cell.ArtistImage.image = swipeModels[indexPath.row].image
+        cell.ArtistName.text = swipeModels[indexPath.row].title
+        //pick two random songs per artist
+        let songs = swipeModels[indexPath.row].subtitle.randomElement()
+        var secondSong = swipeModels[indexPath.row].subtitle.randomElement()
+        while (songs == secondSong) {
+            secondSong = swipeModels[indexPath.row].subtitle.randomElement()
+        }
+        
+        cell.ArtistSongs.text = songs! + ", " + secondSong!
 
         return cell
     }
@@ -60,7 +67,7 @@ class PlaylistTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 4 //changed from 0 to 4 for now
+        return 1 //TODO: check again
     }
 
 }
