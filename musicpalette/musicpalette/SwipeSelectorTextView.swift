@@ -10,7 +10,7 @@ import UIKit
 // changed font
 let titleFont = UIFont(name: "HiraginoSans-W3", size: UIFont.systemFontSize * 2)!
 let subtitleFont = UIFont(name: "HiraginoSans-W6", size: UIFont.systemFontSize * 2)!
-let genreFont = UIFont(name: "HiraginoSans-W6", size: UIFont.systemFontSize * 2)!
+let genreFont = UIFont(name: "HiraginoSans-W3", size: UIFont.systemFontSize * 1.5)!
 
 class BaseTextView: UITextView {
     
