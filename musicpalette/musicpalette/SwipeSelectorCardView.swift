@@ -15,6 +15,7 @@ class SwipeSelectorCardView: UIView {
     private let genreTextView = GenreTextView()
     private let imageView = UIImageView()
     
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         // Source: https://stackoverflow.com/questions/51095450/how-to-apply-card-view-cornerradius-shadow-like-ios-appstore-in-swift-4

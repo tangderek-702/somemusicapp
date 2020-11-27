@@ -55,7 +55,10 @@ class SwipeSelectorViewController: UIViewController, SwipeSelectorDelegate {
     func swipeSelectorViewDidTap(_ swipeSelectorView: SwipeSelectorView, itemAtIndex: Int) {
         if (itemAtIndex < dataSource.items.count) {
             // TODO: Add Detail View Controller per item
-            return
+            var currentArtist =  dataSource.items[itemAtIndex % dataSource.items.count]
+            let pc:MoreAboutArtistViewController = MoreAboutArtistViewController(name: currentArtist.title, bio: currentArtist.title)
+            
+            self.present(pc, animated: true, completion: nil)
         } else {
             // TODO: Add Playlist View Controller at the overflow item
             let pc:PlaylistTableViewController = PlaylistTableViewController(swipeModels: rightSwipes)

@@ -12,6 +12,7 @@ public struct SwipeSelectorModel {
     let subtitle: [String]
     let genre: String
     var image: UIImage?
+    
     init(title: String, subtitle: [String], image: UIImage?, genre: String) {
         self.title = title
         self.subtitle = subtitle
