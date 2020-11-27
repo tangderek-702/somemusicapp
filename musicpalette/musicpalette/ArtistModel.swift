@@ -14,10 +14,12 @@ struct ArtistModel {
     let name: String
     let image: UIImage?
     let songs: [String]
+    let genre: String
     
-    init(name: String, image: UIImage?, songs: [String]) {
+    init(name: String, image: UIImage?, songs: [String], genre: String) {
         self.name = name;
         self.image = image;
         self.songs = songs;
+        self.genre = genre;
     }
 }

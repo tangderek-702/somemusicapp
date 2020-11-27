@@ -10,6 +10,7 @@ import UIKit
 // changed font
 let titleFont = UIFont(name: "HiraginoSans-W3", size: UIFont.systemFontSize * 2)!
 let subtitleFont = UIFont(name: "HiraginoSans-W6", size: UIFont.systemFontSize * 2)!
+let genreFont = UIFont(name: "HiraginoSans-W6", size: UIFont.systemFontSize * 2)!
 
 class BaseTextView: UITextView {
     
@@ -43,6 +44,18 @@ class SubtitleTextView: BaseTextView {
     override init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
         self.font = subtitleFont
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+class GenreTextView: BaseTextView {
+    
+    override init(frame: CGRect, textContainer: NSTextContainer?) {
+        super.init(frame: frame, textContainer: textContainer)
+        self.font = genreFont
     }
     
     required init?(coder: NSCoder) {

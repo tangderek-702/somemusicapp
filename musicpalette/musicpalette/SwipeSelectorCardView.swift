@@ -12,6 +12,7 @@ class SwipeSelectorCardView: UIView {
     
     private let titleTextView = TitleTextView()
     private let subtitleTextView = SubtitleTextView()
+    private let genreTextView = GenreTextView()
     private let imageView = UIImageView()
     
     override init(frame: CGRect) {
@@ -25,6 +26,7 @@ class SwipeSelectorCardView: UIView {
         self.addSubview(imageView)
         self.addSubview(titleTextView)
         self.addSubview(subtitleTextView)
+        self.addSubview(genreTextView)
         self.clipsToBounds = true
         self.backgroundColor = UIColor.white
     }
@@ -40,6 +42,8 @@ class SwipeSelectorCardView: UIView {
         let labelHeight: CGFloat = 40
         titleTextView.frame = CGRect(x: 0, y: imageView.frame.maxY, width: self.bounds.width, height: labelHeight)
         subtitleTextView.frame = CGRect(x: 0, y: titleTextView.frame.maxY, width: self.bounds.width, height: labelHeight)
+        //Text view for genres
+        genreTextView.frame = CGRect(x: 0, y: titleTextView.frame.maxY, width: self.bounds.width, height: labelHeight)
     }
     
     // MARK: Public
@@ -47,6 +51,7 @@ class SwipeSelectorCardView: UIView {
     public func configureViewModel(_ model: SwipeSelectorModel) {
         imageView.image = model.image
         titleTextView.text = model.title
+        genreTextView.text = model.genre
         //subtitleTextView.text = model.subtitle[0]
     }
 }
