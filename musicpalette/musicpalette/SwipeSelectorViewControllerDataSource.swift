@@ -10,7 +10,8 @@ import UIKit
 
 public struct SwipeSelectorViewControllerDataSource {
     //our datasource
-    public let items: [SwipeSelectorModel] = [
+    public let items: [SwipeSelectorModel] =
+        [SwipeSelectorModel(title: "palette \n playlists made for you", subtitle: [""], image: UIImage(named: "palette"), genre: "swipe to continue!"),
         SwipeSelectorModel(title: "Drake", subtitle: ["Hotline Bling", "Headlines", "Toosie Slide", "God's Plan", "One Dance", "In My Feelings"], image: UIImage(named: "drake"), genre: "Rap"),
         SwipeSelectorModel(title: "Rich Brian", subtitle: ["Love in my Pocket", "100 Degrees", "Midsummer Madness", "Yellow", "Sometimes", "When You Come Home"], image: UIImage(named: "richbrian"), genre: "Alternative Rap"),
         SwipeSelectorModel(title: "Joji", subtitle: ["Slow Dancing in the Dark", "Daylight", "Tick Tock", "Ew", "Run"], image: UIImage(named: "joji"), genre: "Alternative R&B"),
