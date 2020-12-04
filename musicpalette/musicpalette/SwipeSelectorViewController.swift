@@ -36,7 +36,9 @@ class SwipeSelectorViewController: UIViewController, SwipeSelectorDelegate {
     func swipeSelectorViewDidSwipe(_ swipeSelectorView: SwipeSelectorView, itemAtIndex: Int, isRightSwipe: Bool) {
         let currItem = dataSource.items[itemAtIndex % dataSource.items.count]
         if (isRightSwipe) {
-            rightSwipes.append(currItem)
+            if (currItem.title != "palette \n playlists made for you") {
+                rightSwipes.append(currItem)
+            }
             print("✅ Right Swipes \(rightSwipes)")
         } else {
             leftSwipes.append(currItem)
@@ -55,10 +57,10 @@ class SwipeSelectorViewController: UIViewController, SwipeSelectorDelegate {
     func swipeSelectorViewDidTap(_ swipeSelectorView: SwipeSelectorView, itemAtIndex: Int) {
         if (itemAtIndex < dataSource.items.count) {
             // TODO: Add Detail View Controller per item
-            var currentArtist =  dataSource.items[itemAtIndex % dataSource.items.count]
-            let pc:MoreAboutArtistViewController = MoreAboutArtistViewController(name: currentArtist.title, bio: currentArtist.title)
+            let playlistViewController:UIViewController = UIViewController()
+            playlistViewController.view.backgroundColor = UIColor.green
+            self.present(playlistViewController, animated: true, completion: nil)
             
-            self.present(pc, animated: true, completion: nil)
         } else {
             // TODO: Add Playlist View Controller at the overflow item
             let pc:PlaylistTableViewController = PlaylistTableViewController(swipeModels: rightSwipes)
