@@ -57,9 +57,12 @@ class SwipeSelectorViewController: UIViewController, SwipeSelectorDelegate {
     func swipeSelectorViewDidTap(_ swipeSelectorView: SwipeSelectorView, itemAtIndex: Int) {
         if (itemAtIndex < dataSource.items.count) {
             // TODO: Add Detail View Controller per item
-            let playlistViewController:UIViewController = UIViewController()
-            playlistViewController.view.backgroundColor = UIColor.green
-            self.present(playlistViewController, animated: true, completion: nil)
+            
+            let storyboard = UIStoryboard(name: "MoreInfo", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "MoreInfoStoryboard") as! MoreInfoViewController
+            vc.currModel = dataSource.items[itemAtIndex % dataSource.items.count]
+            
+            self.present(vc, animated: true)
             
         } else {
             // TODO: Add Playlist View Controller at the overflow item

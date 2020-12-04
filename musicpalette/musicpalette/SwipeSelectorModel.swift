@@ -12,11 +12,13 @@ public struct SwipeSelectorModel {
     let subtitle: [String]
     let genre: String
     var image: UIImage?
+    let bio: String!
     
-    init(title: String, subtitle: [String], image: UIImage?, genre: String) {
+    init(title: String, subtitle: [String], image: UIImage?, genre: String, bio:String) {
         self.title = title
         self.subtitle = subtitle
         self.image = image
         self.genre = genre
+        self.bio =  bio
     }
 }
