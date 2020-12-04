@@ -18,6 +18,8 @@
 		16348F65254BAC48007B80D2 /* SwipeSelector.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16348F64254BAC48007B80D2 /* SwipeSelector.storyboard */; };
 		16816E6D2546060C003C614E /* ArtistDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16816E6C2546060C003C614E /* ArtistDataSource.swift */; };
 		16816E7225460613003C614E /* ArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16816E7125460613003C614E /* ArtistModel.swift */; };
+		22A589232579D89900D70229 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A589222579D89900D70229 /* AVFoundation.framework */; };
+		22A5892B257A18F900D70229 /* sounds in Resources */ = {isa = PBXBuildFile; fileRef = 22A5892A257A18F900D70229 /* sounds */; };
 		22BE6D1B25537FEF00DD7E4B /* PlaylistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE6D1A25537FEF00DD7E4B /* PlaylistTableViewController.swift */; };
 		CEB8D0FA25368DFE004ED8B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8D0F925368DFE004ED8B8 /* AppDelegate.swift */; };
 		CEB8D0FC25368DFE004ED8B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8D0FB25368DFE004ED8B8 /* SceneDelegate.swift */; };
@@ -58,6 +60,8 @@
 		16348F64254BAC48007B80D2 /* SwipeSelector.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SwipeSelector.storyboard; sourceTree = "<group>"; };
 		16816E6C2546060C003C614E /* ArtistDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistDataSource.swift; sourceTree = "<group>"; };
 		16816E7125460613003C614E /* ArtistModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistModel.swift; sourceTree = "<group>"; };
+		22A589222579D89900D70229 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		22A5892A257A18F900D70229 /* sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sounds; sourceTree = "<group>"; };
 		22BE6D1A25537FEF00DD7E4B /* PlaylistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewController.swift; sourceTree = "<group>"; };
 		CEB8D0F625368DFE004ED8B8 /* musicpalette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = musicpalette.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB8D0F925368DFE004ED8B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A589232579D89900D70229 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,11 +103,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22A589212579D89900D70229 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22A589222579D89900D70229 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CEB8D0ED25368DFE004ED8B8 = {
 			isa = PBXGroup;
 			children = (
 				CEB8D0F825368DFE004ED8B8 /* musicpalette */,
 				CEB8D0F725368DFE004ED8B8 /* Products */,
+				22A589212579D89900D70229 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +133,7 @@
 		CEB8D0F825368DFE004ED8B8 /* musicpalette */ = {
 			isa = PBXGroup;
 			children = (
+				22A5892A257A18F900D70229 /* sounds */,
 				16348F55254BAC1E007B80D2 /* SwipeSelectorCardView.swift */,
 				16348F54254BAC1E007B80D2 /* SwipeSelectorDelegate.swift */,
 				16348F57254BAC1E007B80D2 /* SwipeSelectorModel.swift */,
@@ -250,6 +265,7 @@
 			files = (
 				16348F65254BAC48007B80D2 /* SwipeSelector.storyboard in Resources */,
 				CEB8D10625368E06004ED8B8 /* LaunchScreen.storyboard in Resources */,
+				22A5892B257A18F900D70229 /* sounds in Resources */,
 				CEB8D10325368E06004ED8B8 /* Assets.xcassets in Resources */,
 				CEB8D10125368DFE004ED8B8 /* Main.storyboard in Resources */,
 				CEFD46D82560FA15002A0C17 /* PlaylistTableViewCell.xib in Resources */,
