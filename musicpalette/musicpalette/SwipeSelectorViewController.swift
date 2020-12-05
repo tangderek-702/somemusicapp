@@ -45,7 +45,17 @@ class SwipeSelectorViewController: UIViewController, SwipeSelectorDelegate {
             leftSwipes.append(currItem)
             print("🛑 Left Swipes \(leftSwipes)")
         }
-        if (currItem.title != "palette \n playlists made for you") {
+//        if (currItem.title != "palette \n playlists made for you") {
+//            let sound = Bundle.main.path(forResource: currItem.sound, ofType: "wav", inDirectory: "sounds")
+//            do {
+//                audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+//                audioPlayer.play()
+//            }
+//            catch {
+//                print("sound error")
+//            }
+//        }
+        if (currItem.title != "Enjoy the Playlist ✌️") {
             let sound = Bundle.main.path(forResource: currItem.sound, ofType: "wav", inDirectory: "sounds")
             do {
                 audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
