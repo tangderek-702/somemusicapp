@@ -11,7 +11,7 @@ import UIKit
 let titleFont = UIFont(name: "HiraginoSans-W3", size: UIFont.systemFontSize * 2)!
 let subtitleFont = UIFont(name: "HiraginoSans-W6", size: UIFont.systemFontSize * 2)!
 let genreFont = UIFont(name: "HiraginoSans-W3", size: UIFont.systemFontSize * 1.5)!
-let soundFont = UIFont(name: "HiraginoSans-W3", size: UIFont.systemFontSize * 0.8)!
+let soundFont = UIFont(name: "HiraginoSans-W3", size: UIFont.systemFontSize * 1)!
 
 class BaseTextView: UITextView {
     

@@ -47,7 +47,7 @@ class SwipeSelectorCardView: UIView {
         subtitleTextView.frame = CGRect(x: 0, y: titleTextView.frame.maxY, width: self.bounds.width, height: labelHeight)
         //Text view for genres
         genreTextView.frame = CGRect(x: 0, y: titleTextView.frame.maxY, width: self.bounds.width, height: labelHeight)
-        soundTextView.frame = CGRect(x: 0, y: 530, width: self.bounds.width, height: labelHeight)
+        soundTextView.frame = CGRect(x: 0, y: genreTextView.frame.maxY, width: self.bounds.width, height: labelHeight)
     }
     
     // MARK: Public

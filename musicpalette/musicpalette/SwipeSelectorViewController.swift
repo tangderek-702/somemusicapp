@@ -35,6 +35,7 @@ class SwipeSelectorViewController: UIViewController, SwipeSelectorDelegate {
     }
     
     func swipeSelectorViewDidSwipe(_ swipeSelectorView: SwipeSelectorView, itemAtIndex: Int, isRightSwipe: Bool) {
+        audioPlayer.stop()
         let currItem = dataSource.items[itemAtIndex % dataSource.items.count]
         if (isRightSwipe) {
             if (currItem.title != "palette \n playlists made for you") {
@@ -45,7 +46,8 @@ class SwipeSelectorViewController: UIViewController, SwipeSelectorDelegate {
             leftSwipes.append(currItem)
             print("🛑 Left Swipes \(leftSwipes)")
         }
-        if (currItem.title != "Enjoy the Playlist ✌️") {
+        if (currItem.title != "Max" && currItem.title != "Enjoy the Playlist ✌️"
+                && currItem.title != "Tap to Make a New Playlist") {
             let sound = Bundle.main.path(forResource: currItem.sound, ofType: "wav", inDirectory: "sounds")
             do {
                 audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
