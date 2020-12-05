@@ -135,7 +135,7 @@ class SwipeSelectorView: UIView {
             activeCard().configureViewModel(delegate.swipeSelectorView(self, itemForRowAtIndex: hiddenCardIndex))
         } else {
             if (hasShownLastCard) {
-                let placeholderBlankCard = SwipeSelectorModel(title: "", subtitle: [], image: nil, genre: "" , sound: "", soundTitle: "")
+                let placeholderBlankCard = SwipeSelectorModel(title: "", subtitle: [], image: nil, genre: "" , sound: "", soundTitle: "", bio:"")
                 activeCard().configureViewModel(placeholderBlankCard)
             } else {
                 let endOfListModel = delegate.swipeSelectorViewItemForOverflow(self)
