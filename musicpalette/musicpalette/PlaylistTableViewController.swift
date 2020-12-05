@@ -14,6 +14,7 @@ class PlaylistTableViewController: UITableViewController {
     var swipeModels: [SwipeSelectorModel] = []
 
     @IBOutlet weak var playlistTableViewOutlet: UITableView! //TODO: check again
+    
 
     init(swipeModels: [SwipeSelectorModel]) {
         self.swipeModels = swipeModels
@@ -33,7 +34,7 @@ class PlaylistTableViewController: UITableViewController {
     // Provide a cell object for each row.
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //TODO: Add Custom TableViewCell to display the cell
-
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Playlist Table View Cell", for: indexPath) as! PlaylistTableViewCell
         
         cell.ArtistImage.image = swipeModels[indexPath.row].image
@@ -55,7 +56,7 @@ class PlaylistTableViewController: UITableViewController {
         //self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 
         self.tableView.register(UINib(nibName: "PlaylistTableViewCell", bundle: nil), forCellReuseIdentifier: "Playlist Table View Cell")
-
+        self.tableView.rowHeight = 60
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
