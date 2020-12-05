@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import AVFoundation
 
 class SwipeSelectorViewController: UIViewController, SwipeSelectorDelegate {
-    
+    var audioPlayer = AVAudioPlayer()
     let dataSource = SwipeSelectorViewControllerDataSource()
     var rightSwipes: [SwipeSelectorModel] = []
     var leftSwipes: [SwipeSelectorModel] = []
@@ -43,6 +44,16 @@ class SwipeSelectorViewController: UIViewController, SwipeSelectorDelegate {
         } else {
             leftSwipes.append(currItem)
             print("🛑 Left Swipes \(leftSwipes)")
+        }
+        if (currItem.title != "Enjoy the Playlist ✌️") {
+            let sound = Bundle.main.path(forResource: currItem.sound, ofType: "wav", inDirectory: "sounds")
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+                audioPlayer.play()
+            }
+            catch {
+                print("sound error")
+            }
         }
     }
     
