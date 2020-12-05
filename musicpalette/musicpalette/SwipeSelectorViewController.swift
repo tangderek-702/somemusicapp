@@ -55,7 +55,7 @@ class SwipeSelectorViewController: UIViewController, SwipeSelectorDelegate {
     }
     
     func swipeSelectorViewDidTap(_ swipeSelectorView: SwipeSelectorView, itemAtIndex: Int) {
-        if (itemAtIndex < dataSource.items.count) {
+        if (itemAtIndex < dataSource.items.count && itemAtIndex != (dataSource.items.count - 1)) {
             // TODO: Add Detail View Controller per item
             
             let storyboard = UIStoryboard(name: "MoreInfo", bundle: nil)
@@ -64,11 +64,18 @@ class SwipeSelectorViewController: UIViewController, SwipeSelectorDelegate {
             
             self.present(vc, animated: true)
             
-        } else {
+        } else if (itemAtIndex == (dataSource.items.count - 1)){
             // TODO: Add Playlist View Controller at the overflow item
             let pc:PlaylistTableViewController = PlaylistTableViewController(swipeModels: rightSwipes)
             self.present(pc, animated: true, completion: nil)
+        } else if (itemAtIndex >= dataSource.items.count){
+            let pc:SwipeSelectorViewController = SwipeSelectorViewController()
+            pc.rightSwipes = []
+            pc.leftSwipes = []
+            self.present(pc, animated: true, completion: nil)
+            
         }
+        
     }
 
 }
