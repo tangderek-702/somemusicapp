@@ -11,6 +11,7 @@ import UIKit
 let titleFont = UIFont(name: "HiraginoSans-W3", size: UIFont.systemFontSize * 2)!
 let subtitleFont = UIFont(name: "HiraginoSans-W6", size: UIFont.systemFontSize * 2)!
 let genreFont = UIFont(name: "HiraginoSans-W3", size: UIFont.systemFontSize * 1.5)!
+let soundFont = UIFont(name: "HiraginoSans-W3", size: UIFont.systemFontSize * 0.8)!
 
 class BaseTextView: UITextView {
     
@@ -56,6 +57,18 @@ class GenreTextView: BaseTextView {
     override init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
         self.font = genreFont
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+class SoundTextView: BaseTextView {
+    
+    override init(frame: CGRect, textContainer: NSTextContainer?) {
+        super.init(frame: frame, textContainer: textContainer)
+        self.font = soundFont
     }
     
     required init?(coder: NSCoder) {

@@ -14,6 +14,7 @@ class SwipeSelectorCardView: UIView {
     private let subtitleTextView = SubtitleTextView()
     private let genreTextView = GenreTextView()
     private let imageView = UIImageView()
+    private let soundTextView = SoundTextView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -27,6 +28,7 @@ class SwipeSelectorCardView: UIView {
         self.addSubview(titleTextView)
         self.addSubview(subtitleTextView)
         self.addSubview(genreTextView)
+        self.addSubview(soundTextView)
         self.clipsToBounds = true
         self.backgroundColor = UIColor.white
     }
@@ -44,6 +46,7 @@ class SwipeSelectorCardView: UIView {
         subtitleTextView.frame = CGRect(x: 0, y: titleTextView.frame.maxY, width: self.bounds.width, height: labelHeight)
         //Text view for genres
         genreTextView.frame = CGRect(x: 0, y: titleTextView.frame.maxY, width: self.bounds.width, height: labelHeight)
+        soundTextView.frame = CGRect(x: 0, y: 530, width: self.bounds.width, height: labelHeight)
     }
     
     // MARK: Public
@@ -52,6 +55,7 @@ class SwipeSelectorCardView: UIView {
         imageView.image = model.image
         titleTextView.text = model.title
         genreTextView.text = model.genre
+        soundTextView.text = model.soundTitle
         //subtitleTextView.text = model.subtitle[0]
     }
 }
