@@ -6,3 +6,4 @@ We implemented Alex Takahashi's [SwipeSelectorKit](https://github.com/alextakaha
 
 Note: Latest version of the app is currently on newMusicBranch. 
 
+Here is a youtube demo. https://youtu.be/mdnMzIAQuDs
